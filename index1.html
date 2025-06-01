@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="C:/Users/muska/OneDrive/Desktop/mushu/codsoft/portfolio-website-main/port.png" class="port">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UNDERGRADUATE STUDENT</p> 
+            <h2>Hi, I'm <span>MUSKAAN TABASSUM</span></h2>
+            <h3>From INDIA</h3>
+        </div>
+    </div>
+</div>
+<!-- -------------about-------------------- -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:/Users/muska/OneDrive/Desktop/mushu/codsoft/portfolio-website-main/mushu.jpg" class="mushu">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><span><br>I am Muskaan Tabassum from Hyderabad, Telangana. My father is a driver and my mother is a homemaker. I am a passionate student pursuing undergraduate program in B Tech Artificial Intelligence and Data Science at Muffakham Jah College of Engineering and Technology, Hyderabad. I am a beginner in programming and stepping into the world of coding. I am a Research core team member of MJCET CIS club. I like chocolates. I am a nature lover. My hobbies are dancing and playing badminton.
+                </span></p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('strengths')">Strengths</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2022</span><br>BTech <br>Muffakham Jah College of Engineering and Technology</li>
+                        <li><span>2020-2022</span><br>Intermediate<br>TMRJC Girls-1 Gajwel</li>
+                        <li><span>2020</span><br>High School<br>TMREIS Girls-1 Gajwel</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="strengths">
+                    <ul>
+                        <li>Hard-Working </li>
+                        <li>Ability to Multitasking</li>
+                        <li>Punctual</li>
+                        <li>Self Motivated</li>
+                        <li>Problem Solving</li> 
+                        <li>Teamwork</li>
+                        <li>Responsible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <!-- -------------Skills-------------------- -->
+   <div id="Skills">
+    <div class="container">
+        <h1>My Skills</h1>
+        <li><h3>html</h3>
+            <span class="bar"><span class="html"></span></span>
+        </li>
+        <li><h3>CSS</h3>
+            <span class="bar"><span class="CSS"></span></span>
+        </li>
+        <li><h3>C-language</h3>
+            <span class="bar"><span class="C-language"></span></span>
+        </li>
+        <li><h3>Java</h3>
+            <span class="bar"><span class="Java"></span></span>
+        </li>
+    </div>
+        </div>
+ <!-- ------------------Project -------------- -->
+ <div id="Project">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:/Users/muska/OneDrive/Desktop/mushu/codsoft/portfolio-website-main/food.jpg">
+                <div class="layer">
+                <h3>Website Development</h3>
+                <p>The website contains delicious hyderabadi food recipes. <br> The food items along with its health effects and benefits are shown. The food items used in recipes along with its calories are displayed. </p>
+                <h3>Under-Working</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+<!-- --------- contact------------ -->
+<div id="contact">
+    <div class="container">
+         <h1 class="sub-title">My Contact</h1>
+         <p> <br> 160422747004@mjcollege.ac.in</p>
+         <p>ph no: 6309325162</p>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ MuskaanTabassum.develop with love</p>
+    </div>
+</div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+  </script>
+</body>
+</html>
